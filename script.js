@@ -39,7 +39,7 @@ const userInput = document.getElementById('userInput');
 function sendMessage() {
     const userMessage = userInput.value.toLowerCase();
     const index = prompts.findIndex(prompts => prompts.includes(userMessage));
-    const response = index !== -1 ? replies[index][Math.floor(Math.random() * replies[index].length)] : "I'm sorry, I don't understand that.";
+    const response = index !== -1 ? replies[index][Math.floor(Math.random() * replies[index].length)] : "Arindam Deb (ARI) leads Global Executive Hiring, GTE KPI Execution, and more. Pooja Saxena focuses on Global Executive Hiring, Exec Market Intelligence, and Dashboard Reporting. Mahek Mann excels in Global Executive Hiring and Innovation Initiatives. Lesten D’Souza specializes in Global Executive Hiring and Innovation Initiatives. Anushree Kulkarni contributes to Global Executive Hiring and Talent Communities with a focus on intelligence and execution.";
 
     appendMessage('user', userMessage);
     appendMessage('bot', response);
